@@ -1,0 +1,707 @@
+[
+  {
+    "exam_id": "EX001",
+    "subject": "Python Programming",
+    "exam_title": "Python Programming Fundamentals",
+    "duration": 20,
+    "total_marks": 10,
+    "questions": [
+      {
+        "question_id": 1,
+        "question": "Which keyword is used to define a function in Python?",
+        "options": [
+          "func",
+          "define",
+          "def",
+          "function"
+        ],
+        "correct_answer": "def"
+      },
+      {
+        "question_id": 2,
+        "question": "What is the output of: print(type([]))?",
+        "options": [
+          "<class 'tuple'>",
+          "<class 'list'>",
+          "<class 'dict'>",
+          "<class 'set'>"
+        ],
+        "correct_answer": "<class 'list'>"
+      },
+      {
+        "question_id": 3,
+        "question": "Which of the following is used to handle exceptions in Python?",
+        "options": [
+          "try-except",
+          "catch-finally",
+          "do-catch",
+          "handle-error"
+        ],
+        "correct_answer": "try-except"
+      },
+      {
+        "question_id": 4,
+        "question": "What does the 'len()' function return?",
+        "options": [
+          "The sum of elements",
+          "The number of elements",
+          "The largest element",
+          "The type of elements"
+        ],
+        "correct_answer": "The number of elements"
+      },
+      {
+        "question_id": 5,
+        "question": "Which of the following creates a dictionary in Python?",
+        "options": [
+          "[1, 2, 3]",
+          "(1, 2, 3)",
+          "{1, 2, 3}",
+          "{'a': 1, 'b': 2}"
+        ],
+        "correct_answer": "{'a': 1, 'b': 2}"
+      },
+      {
+        "question_id": 6,
+        "question": "What is the result of 10 % 3 in Python?",
+        "options": [
+          "3",
+          "1",
+          "0",
+          "2"
+        ],
+        "correct_answer": "1"
+      },
+      {
+        "question_id": 7,
+        "question": "Which method is used to add an element to a list?",
+        "options": [
+          "add()",
+          "insert()",
+          "append()",
+          "push()"
+        ],
+        "correct_answer": "append()"
+      },
+      {
+        "question_id": 8,
+        "question": "What does 'self' refer to in a Python class?",
+        "options": [
+          "The parent class",
+          "The current instance",
+          "The class itself",
+          "A static method"
+        ],
+        "correct_answer": "The current instance"
+      },
+      {
+        "question_id": 9,
+        "question": "Which of the following is a mutable data type in Python?",
+        "options": [
+          "Tuple",
+          "String",
+          "List",
+          "Integer"
+        ],
+        "correct_answer": "List"
+      },
+      {
+        "question_id": 10,
+        "question": "What is the correct syntax to create a lambda function?",
+        "options": [
+          "lambda x => x+1",
+          "lambda x: x+1",
+          "def lambda x: x+1",
+          "function(x): x+1"
+        ],
+        "correct_answer": "lambda x: x+1"
+      },
+      {
+        "question_id": 11,
+        "question": "Which module is used for regular expressions in Python?",
+        "options": [
+          "regex",
+          "re",
+          "regexp",
+          "pattern"
+        ],
+        "correct_answer": "re"
+      },
+      {
+        "question_id": 12,
+        "question": "What does 'pip' stand for?",
+        "options": [
+          "Python Install Package",
+          "Pip Installs Packages",
+          "Package Installer for Python",
+          "Python Index Package"
+        ],
+        "correct_answer": "Pip Installs Packages"
+      }
+    ]
+  },
+  {
+    "exam_id": "EX002",
+    "subject": "Data Structures",
+    "exam_title": "Data Structures & Algorithms",
+    "duration": 25,
+    "total_marks": 10,
+    "questions": [
+      {
+        "question_id": 1,
+        "question": "What is the time complexity of accessing an element in an array?",
+        "options": [
+          "O(n)",
+          "O(log n)",
+          "O(1)",
+          "O(n²)"
+        ],
+        "correct_answer": "O(1)"
+      },
+      {
+        "question_id": 2,
+        "question": "Which data structure uses LIFO (Last In First Out) principle?",
+        "options": [
+          "Queue",
+          "Stack",
+          "Linked List",
+          "Tree"
+        ],
+        "correct_answer": "Stack"
+      },
+      {
+        "question_id": 3,
+        "question": "In a binary search tree, where is the smallest element located?",
+        "options": [
+          "Root node",
+          "Rightmost node",
+          "Leftmost node",
+          "Any leaf node"
+        ],
+        "correct_answer": "Leftmost node"
+      },
+      {
+        "question_id": 4,
+        "question": "What is the space complexity of a merge sort algorithm?",
+        "options": [
+          "O(1)",
+          "O(log n)",
+          "O(n)",
+          "O(n log n)"
+        ],
+        "correct_answer": "O(n)"
+      },
+      {
+        "question_id": 5,
+        "question": "Which traversal of a binary tree visits nodes in sorted order?",
+        "options": [
+          "Pre-order",
+          "Post-order",
+          "In-order",
+          "Level-order"
+        ],
+        "correct_answer": "In-order"
+      },
+      {
+        "question_id": 6,
+        "question": "What is the average time complexity of Quick Sort?",
+        "options": [
+          "O(n²)",
+          "O(n log n)",
+          "O(n)",
+          "O(log n)"
+        ],
+        "correct_answer": "O(n log n)"
+      },
+      {
+        "question_id": 7,
+        "question": "Which data structure is best for implementing a priority queue?",
+        "options": [
+          "Array",
+          "Linked List",
+          "Heap",
+          "Stack"
+        ],
+        "correct_answer": "Heap"
+      },
+      {
+        "question_id": 8,
+        "question": "How many edges does a complete graph with n vertices have?",
+        "options": [
+          "n",
+          "n-1",
+          "n(n-1)/2",
+          "n²"
+        ],
+        "correct_answer": "n(n-1)/2"
+      },
+      {
+        "question_id": 9,
+        "question": "What is the worst case time complexity of Bubble Sort?",
+        "options": [
+          "O(n)",
+          "O(n log n)",
+          "O(n²)",
+          "O(log n)"
+        ],
+        "correct_answer": "O(n²)"
+      },
+      {
+        "question_id": 10,
+        "question": "Which data structure uses FIFO (First In First Out) principle?",
+        "options": [
+          "Stack",
+          "Queue",
+          "Heap",
+          "Tree"
+        ],
+        "correct_answer": "Queue"
+      },
+      {
+        "question_id": 11,
+        "question": "What is the height of a complete binary tree with n nodes?",
+        "options": [
+          "O(n)",
+          "O(log n)",
+          "O(n²)",
+          "O(1)"
+        ],
+        "correct_answer": "O(log n)"
+      },
+      {
+        "question_id": 12,
+        "question": "Which algorithm is used for shortest path in a weighted graph?",
+        "options": [
+          "BFS",
+          "DFS",
+          "Dijkstra's",
+          "Prim's"
+        ],
+        "correct_answer": "Dijkstra's"
+      }
+    ]
+  },
+  {
+    "exam_id": "EX003",
+    "subject": "DBMS",
+    "exam_title": "Database Management Systems",
+    "duration": 20,
+    "total_marks": 10,
+    "questions": [
+      {
+        "question_id": 1,
+        "question": "What does ACID stand for in databases?",
+        "options": [
+          "Atomicity, Consistency, Isolation, Durability",
+          "Array, Consistency, Index, Data",
+          "Atomicity, Concurrency, Isolation, Data",
+          "None of the above"
+        ],
+        "correct_answer": "Atomicity, Consistency, Isolation, Durability"
+      },
+      {
+        "question_id": 2,
+        "question": "Which SQL command is used to retrieve data?",
+        "options": [
+          "INSERT",
+          "UPDATE",
+          "SELECT",
+          "DELETE"
+        ],
+        "correct_answer": "SELECT"
+      },
+      {
+        "question_id": 3,
+        "question": "What is a primary key?",
+        "options": [
+          "A key that can be NULL",
+          "A key that uniquely identifies each row",
+          "A key that links two tables",
+          "A foreign key"
+        ],
+        "correct_answer": "A key that uniquely identifies each row"
+      },
+      {
+        "question_id": 4,
+        "question": "Which normal form removes partial dependencies?",
+        "options": [
+          "1NF",
+          "2NF",
+          "3NF",
+          "BCNF"
+        ],
+        "correct_answer": "2NF"
+      },
+      {
+        "question_id": 5,
+        "question": "What is a JOIN in SQL?",
+        "options": [
+          "A way to delete records",
+          "A way to combine rows from two tables",
+          "A way to create a new table",
+          "A way to update records"
+        ],
+        "correct_answer": "A way to combine rows from two tables"
+      },
+      {
+        "question_id": 6,
+        "question": "Which of the following is a DDL command?",
+        "options": [
+          "SELECT",
+          "INSERT",
+          "CREATE",
+          "UPDATE"
+        ],
+        "correct_answer": "CREATE"
+      },
+      {
+        "question_id": 7,
+        "question": "What is a foreign key?",
+        "options": [
+          "A key from another country",
+          "A key referencing another table's primary key",
+          "A duplicate primary key",
+          "An indexed column"
+        ],
+        "correct_answer": "A key referencing another table's primary key"
+      },
+      {
+        "question_id": 8,
+        "question": "What does SQL stand for?",
+        "options": [
+          "Structured Query Language",
+          "Simple Query Language",
+          "Standard Query Logic",
+          "Sequential Query Language"
+        ],
+        "correct_answer": "Structured Query Language"
+      },
+      {
+        "question_id": 9,
+        "question": "Which clause is used to filter grouped results?",
+        "options": [
+          "WHERE",
+          "HAVING",
+          "GROUP BY",
+          "ORDER BY"
+        ],
+        "correct_answer": "HAVING"
+      },
+      {
+        "question_id": 10,
+        "question": "What is a deadlock in DBMS?",
+        "options": [
+          "A slow query",
+          "Two transactions waiting for each other to release locks",
+          "A broken database connection",
+          "A corrupt table"
+        ],
+        "correct_answer": "Two transactions waiting for each other to release locks"
+      },
+      {
+        "question_id": 11,
+        "question": "Which index type is most commonly used for fast lookups?",
+        "options": [
+          "Bitmap Index",
+          "B-Tree Index",
+          "Hash Index",
+          "Cluster Index"
+        ],
+        "correct_answer": "B-Tree Index"
+      },
+      {
+        "question_id": 12,
+        "question": "What is the purpose of the GROUP BY clause?",
+        "options": [
+          "To sort rows",
+          "To filter rows",
+          "To group rows with same values",
+          "To join tables"
+        ],
+        "correct_answer": "To group rows with same values"
+      }
+    ]
+  },
+  {
+    "exam_id": "EX004",
+    "subject": "Computer Networks",
+    "exam_title": "Computer Networks Fundamentals",
+    "duration": 20,
+    "total_marks": 10,
+    "questions": [
+      {
+        "question_id": 1,
+        "question": "What does HTTP stand for?",
+        "options": [
+          "HyperText Transfer Protocol",
+          "High Transfer Text Protocol",
+          "HyperText Transport Protocol",
+          "Hybrid Text Transfer Protocol"
+        ],
+        "correct_answer": "HyperText Transfer Protocol"
+      },
+      {
+        "question_id": 2,
+        "question": "How many layers does the OSI model have?",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "correct_answer": "7"
+      },
+      {
+        "question_id": 3,
+        "question": "Which protocol is used for sending email?",
+        "options": [
+          "FTP",
+          "HTTP",
+          "SMTP",
+          "POP3"
+        ],
+        "correct_answer": "SMTP"
+      },
+      {
+        "question_id": 4,
+        "question": "What is the full form of IP?",
+        "options": [
+          "Internet Protocol",
+          "Internal Protocol",
+          "Intranet Protocol",
+          "Interface Protocol"
+        ],
+        "correct_answer": "Internet Protocol"
+      },
+      {
+        "question_id": 5,
+        "question": "Which layer handles routing in the OSI model?",
+        "options": [
+          "Data Link Layer",
+          "Transport Layer",
+          "Network Layer",
+          "Physical Layer"
+        ],
+        "correct_answer": "Network Layer"
+      },
+      {
+        "question_id": 6,
+        "question": "What is the maximum length of an IPv4 address?",
+        "options": [
+          "16 bits",
+          "32 bits",
+          "64 bits",
+          "128 bits"
+        ],
+        "correct_answer": "32 bits"
+      },
+      {
+        "question_id": 7,
+        "question": "What does DNS stand for?",
+        "options": [
+          "Dynamic Network System",
+          "Domain Name System",
+          "Digital Network Service",
+          "Data Network Standard"
+        ],
+        "correct_answer": "Domain Name System"
+      },
+      {
+        "question_id": 8,
+        "question": "Which protocol provides reliable data transfer?",
+        "options": [
+          "UDP",
+          "IP",
+          "TCP",
+          "ICMP"
+        ],
+        "correct_answer": "TCP"
+      },
+      {
+        "question_id": 9,
+        "question": "What is the default port for HTTPS?",
+        "options": [
+          "80",
+          "443",
+          "8080",
+          "21"
+        ],
+        "correct_answer": "443"
+      },
+      {
+        "question_id": 10,
+        "question": "What is a MAC address?",
+        "options": [
+          "A software address",
+          "A hardware address assigned to a network interface",
+          "An IP address for Macs",
+          "A routing table entry"
+        ],
+        "correct_answer": "A hardware address assigned to a network interface"
+      },
+      {
+        "question_id": 11,
+        "question": "What does LAN stand for?",
+        "options": [
+          "Long Area Network",
+          "Local Area Network",
+          "Large Access Network",
+          "Linked Area Node"
+        ],
+        "correct_answer": "Local Area Network"
+      },
+      {
+        "question_id": 12,
+        "question": "Which device operates at the Data Link layer?",
+        "options": [
+          "Router",
+          "Hub",
+          "Switch",
+          "Repeater"
+        ],
+        "correct_answer": "Switch"
+      }
+    ]
+  },
+  {
+    "exam_id": "EX005",
+    "subject": "Operating Systems",
+    "exam_title": "Operating Systems Concepts",
+    "duration": 20,
+    "total_marks": 10,
+    "questions": [
+      {
+        "question_id": 1,
+        "question": "What is a process in an operating system?",
+        "options": [
+          "A stored program",
+          "A program in execution",
+          "A CPU instruction",
+          "A memory block"
+        ],
+        "correct_answer": "A program in execution"
+      },
+      {
+        "question_id": 2,
+        "question": "Which scheduling algorithm gives minimum average waiting time?",
+        "options": [
+          "FCFS",
+          "Round Robin",
+          "SJF",
+          "Priority Scheduling"
+        ],
+        "correct_answer": "SJF"
+      },
+      {
+        "question_id": 3,
+        "question": "What is virtual memory?",
+        "options": [
+          "RAM memory",
+          "Memory on GPU",
+          "A technique that uses disk space as RAM",
+          "Cache memory"
+        ],
+        "correct_answer": "A technique that uses disk space as RAM"
+      },
+      {
+        "question_id": 4,
+        "question": "What is a semaphore used for?",
+        "options": [
+          "Memory management",
+          "Process synchronization",
+          "CPU scheduling",
+          "File management"
+        ],
+        "correct_answer": "Process synchronization"
+      },
+      {
+        "question_id": 5,
+        "question": "Which page replacement algorithm is optimal?",
+        "options": [
+          "FIFO",
+          "LRU",
+          "Optimal",
+          "MRU"
+        ],
+        "correct_answer": "Optimal"
+      },
+      {
+        "question_id": 6,
+        "question": "What does PCB stand for in OS?",
+        "options": [
+          "Process Control Block",
+          "Program Control Block",
+          "Processor Cache Block",
+          "Process Control Bus"
+        ],
+        "correct_answer": "Process Control Block"
+      },
+      {
+        "question_id": 7,
+        "question": "What is thrashing in OS?",
+        "options": [
+          "Fast CPU execution",
+          "Excessive paging causing slow performance",
+          "Memory overflow",
+          "CPU overheating"
+        ],
+        "correct_answer": "Excessive paging causing slow performance"
+      },
+      {
+        "question_id": 8,
+        "question": "Which type of OS allows multiple users simultaneously?",
+        "options": [
+          "Single-user",
+          "Batch",
+          "Multi-user",
+          "Real-time"
+        ],
+        "correct_answer": "Multi-user"
+      },
+      {
+        "question_id": 9,
+        "question": "What is a critical section?",
+        "options": [
+          "An important function",
+          "Code that accesses shared resources",
+          "The OS kernel",
+          "A memory segment"
+        ],
+        "correct_answer": "Code that accesses shared resources"
+      },
+      {
+        "question_id": 10,
+        "question": "What is the role of a bootloader?",
+        "options": [
+          "Manage processes",
+          "Load the OS into memory",
+          "Handle interrupts",
+          "Manage files"
+        ],
+        "correct_answer": "Load the OS into memory"
+      },
+      {
+        "question_id": 11,
+        "question": "What does FCFS stand for?",
+        "options": [
+          "First Come First Served",
+          "First CPU First Scheduled",
+          "Fast Core File System",
+          "First Cache First Serve"
+        ],
+        "correct_answer": "First Come First Served"
+      },
+      {
+        "question_id": 12,
+        "question": "What is a context switch?",
+        "options": [
+          "Switching between users",
+          "Saving and loading process states",
+          "Changing the OS",
+          "Switching memory pages"
+        ],
+        "correct_answer": "Saving and loading process states"
+      }
+    ]
+  }
+]

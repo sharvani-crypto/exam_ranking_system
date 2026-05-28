@@ -1,0 +1,110 @@
+[
+  {
+    "student_id": "STU001",
+    "name": "Arjun Sharma",
+    "email": "arjun@example.com",
+    "password": "arjun123",
+    "scores": [
+      {
+        "exam_id": "EX001",
+        "score": 9,
+        "total": 10,
+        "percentage": 90,
+        "rank": 1,
+        "date": "2025-01-10"
+      },
+      {
+        "exam_id": "EX002",
+        "score": 8,
+        "total": 10,
+        "percentage": 80,
+        "rank": 2,
+        "date": "2025-01-12"
+      }
+    ],
+    "rank": 1
+  },
+  {
+    "student_id": "STU002",
+    "name": "Priya Patel",
+    "email": "priya@example.com",
+    "password": "priya123",
+    "scores": [
+      {
+        "exam_id": "EX001",
+        "score": 7,
+        "total": 10,
+        "percentage": 70,
+        "rank": 3,
+        "date": "2025-01-10"
+      },
+      {
+        "exam_id": "EX003",
+        "score": 9,
+        "total": 10,
+        "percentage": 90,
+        "rank": 1,
+        "date": "2025-01-13"
+      }
+    ],
+    "rank": 2
+  },
+  {
+    "student_id": "STU003",
+    "name": "Rahul Kumar",
+    "email": "rahul@example.com",
+    "password": "rahul123",
+    "scores": [
+      {
+        "exam_id": "EX002",
+        "score": 10,
+        "total": 10,
+        "percentage": 100,
+        "rank": 1,
+        "date": "2025-01-12"
+      },
+      {
+        "exam_id": "EX004",
+        "score": 8,
+        "total": 10,
+        "percentage": 80,
+        "rank": 2,
+        "date": "2025-01-14"
+      }
+    ],
+    "rank": 3
+  },
+  {
+    "student_id": "STU004",
+    "name": "Sneha Reddy",
+    "email": "sneha@example.com",
+    "password": "sneha123",
+    "scores": [
+      {
+        "exam_id": "EX003",
+        "score": 6,
+        "total": 10,
+        "percentage": 60,
+        "rank": 4,
+        "date": "2025-01-13"
+      },
+      {
+        "exam_id": "EX005",
+        "score": 9,
+        "total": 10,
+        "percentage": 90,
+        "rank": 1,
+        "date": "2025-01-15"
+      }
+    ],
+    "rank": 4
+  },
+  {
+    "student_id": "STU005",
+    "name": "Vikram Singh",
+    "email": "vikram@example.com",
+    "password": "vikram123",
+    "scores": [],
+    "rank": 0
+  }
+]

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Result — {{ result.exam_title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="{{ url_for('home') }}" class="nav-brand">
+      <span class="brand-icon">🎓</span>
+      Exam &amp; Ranking System
+    </a>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="{{ url_for('home') }}">🏠 Home</a></li>
+      <li><a href="{{ url_for('dashboard') }}">📋 Dashboard</a></li>
+      <li><a href="{{ url_for('leaderboard') }}">🏆 Leaderboard</a></li>
+      <li><a href="{{ url_for('history') }}">📜 History</a></li>
+      <li><a href="{{ url_for('logout') }}" class="btn-logout">Logout ↗</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- RESULT HERO -->
+<div class="result-hero">
+  <div class="hero-badge animate-in">
+    {% if result.percentage >= 90 %}🏆 Excellent Performance!
+    {% elif result.percentage >= 70 %}👍 Good Job!
+    {% elif result.percentage >= 50 %}📈 Average Performance
+    {% else %}📚 Keep Practising!{% endif %}
+  </div>
+
+  <!-- Score Circle -->
+  <div class="score-circle animate-in delay-1">
+    <div class="score-number">{{ result.score }}/{{ result.total }}</div>
+    <div class="score-label">Score</div>
+  </div>
+
+  <h2 class="animate-in delay-2">{{ result.exam_title }}</h2>
+  <p class="animate-in delay-2">{{ result.subject }} · Exam Completed</p>
+
+  <!-- Result Stats Row -->
+  <div class="result-stats animate-in delay-3">
+    <div class="result-stat-card">
+      <div class="result-stat-value">{{ result.percentage }}%</div>
+      <div class="result-stat-label">Percentage</div>
+    </div>
+
+    <div class="result-stat-card">
+      <div class="result-stat-value">{{ result.correct_count }}</div>
+      <div class="result-stat-label">Correct Answers</div>
+    </div>
+
+    <div class="result-stat-card">
+      <div class="result-stat-value">{{ result.total - result.correct_count }}</div>
+      <div class="result-stat-label">Wrong Answers</div>
+    </div>
+
+    <div class="result-stat-card">
+      <div class="result-stat-value">
+        <span class="rank-badge">
+          🏅 #{{ result.exam_rank }}
+        </span>
+      </div>
+      <div class="result-stat-label">Exam Rank</div>
+    </div>
+
+    <div class="result-stat-card">
+      <div class="result-stat-value">
+        <span class="rank-badge">
+          🌐 #{{ result.global_rank }}
+        </span>
+      </div>
+      <div class="result-stat-label">Global Rank</div>
+    </div>
+  </div>
+</div>
+
+<!-- ACTION BUTTONS -->
+<section class="section" style="padding: 2rem; background: var(--off-white);">
+  <div class="section-inner">
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2.5rem;">
+      <a href="{{ url_for('dashboard') }}" class="btn btn-red btn-lg">
+        📋 Back to Dashboard
+      </a>
+      <a href="{{ url_for('leaderboard') }}" class="btn btn-outline" style="background: var(--white); color: var(--red-primary); border-color: var(--red-primary);">
+        🏆 View Leaderboard
+      </a>
+      <a href="{{ url_for('history') }}" class="btn btn-ghost btn-lg">
+        📜 Attempt History
+      </a>
+    </div>
+
+    <!-- Performance Analysis -->
+    <div style="background: var(--white); border-radius: var(--radius-lg); padding: 2rem;
+                box-shadow: var(--shadow-sm); border: 1px solid var(--gray-light); margin-bottom: 2rem;">
+      <h3 style="font-family: var(--font-display); margin-bottom: 1.2rem; font-size: 1.2rem;">
+        📊 Performance Analysis
+      </h3>
+
+      <!-- Score Bar -->
+      <div style="margin-bottom: 1.5rem;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.5rem;">
+          <span style="color: var(--gray-text);">Score Progress</span>
+          <span style="font-weight: 600; color: var(--red-primary);">{{ result.percentage }}%</span>
+        </div>
+        <div style="height: 12px; background: var(--gray-light); border-radius: 50px; overflow: hidden;">
+          <div style="height: 100%; width: {{ result.percentage }}%; border-radius: 50px;
+                      background: linear-gradient(90deg, var(--red-primary), var(--red-light));
+                      transition: width 1s ease;"></div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem;">
+        <div style="text-align: center; padding: 1rem; background: #EAFAF1; border-radius: var(--radius-md);">
+          <div style="font-size: 1.5rem; font-weight: 700; color: #27AE60;">{{ result.correct_count }}</div>
+          <div style="font-size: 0.8rem; color: var(--gray-text); text-transform: uppercase; letter-spacing: 1px;">Correct</div>
+        </div>
+        <div style="text-align: center; padding: 1rem; background: var(--red-ultra); border-radius: var(--radius-md);">
+          <div style="font-size: 1.5rem; font-weight: 700; color: var(--red-primary);">{{ result.total - result.correct_count }}</div>
+          <div style="font-size: 0.8rem; color: var(--gray-text); text-transform: uppercase; letter-spacing: 1px;">Incorrect</div>
+        </div>
+        <div style="text-align: center; padding: 1rem; background: var(--gray-light); border-radius: var(--radius-md);">
+          <div style="font-size: 1.5rem; font-weight: 700; color: var(--dark-text);">{{ result.total }}</div>
+          <div style="font-size: 0.8rem; color: var(--gray-text); text-transform: uppercase; letter-spacing: 1px;">Total</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wrong Answers Review -->
+    {% if result.wrong_list %}
+    <div class="answer-review-section">
+      <h3 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 1.2rem; color: var(--dark-text);">
+        📝 Answer Review — Incorrect Answers
+      </h3>
+
+      {% for item in result.wrong_list %}
+      <div class="answer-item wrong animate-in">
+        <div class="answer-header">
+          <div class="answer-q">{{ item.question }}</div>
+          <span class="answer-badge-wrong">✗ Wrong</span>
+        </div>
+        <div class="answer-detail">
+          <div style="margin-bottom: 0.3rem;">
+            Your Answer: <strong style="color: var(--red-primary);">
+              {% if item.submitted %}{{ item.submitted }}{% else %}Not Answered{% endif %}
+            </strong>
+          </div>
+          <div>
+            Correct Answer: <strong style="color: #27AE60;">{{ item.correct }}</strong>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="alert alert-success animate-in">
+      🎉 Perfect Score! All {{ result.total }} answers were correct!
+    </div>
+    {% endif %}
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">🎓 Exam &amp; Ranking System</div>
+    <div class="footer-credit">B.Tech Mini Project · Data Structures &amp; Algorithms</div>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
